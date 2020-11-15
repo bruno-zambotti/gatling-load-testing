@@ -1,0 +1,19 @@
+# Compiled class file
+*.class
+/*.classpath
+/.classpath
+
+# Log file
+*.log
+
+# IntelliJ #
+.idea/
+*.DS_Store
+*.iml
+/build
+target/
+.scala_dependencies
+.worksheet
+
+# Others #
+.gradle

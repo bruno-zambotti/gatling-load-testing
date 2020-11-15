@@ -1,0 +1,22 @@
+plugins {
+    id 'io.gatling.gradle' version '3.4.1'
+}
+
+sourceSets {
+    gatling {
+        scala.srcDirs = ["src/gatling/scala"]
+        resources.srcDirs = ["src/gatling/resources"]
+    }
+}
+
+gatling {
+    simulations = {
+        include "**/*Simulation.scala"
+    }
+}
+
+dependencies {
+    gatling "com.h2database:h2:1.4.193"
+    gatling "com.lihaoyi:ujson_2.12:1.2.2"
+    gatling "com.lihaoyi:requests_2.12:0.6.5"
+}
